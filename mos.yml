@@ -23,14 +23,15 @@ filesystem:
 
 # Custom configuration entries, settable via "device configuration"
 config_schema:
-  - ["epd", "o", {title: "E-paper display settings"}]
-  - ["epd.busy_gpio", "i", 4, {title: "Busy Pin"}]
-  - ["epd.rst_gpio", "i", 16, {title: "Reset Pin"}]
-  - ["epd.dc_gpio", "i", 17, {title: "Data/Command Pin"}]
-  - ["epd.cs_gpio", "i", 5, {title: "CS Pin"}]
+  # - ["epd", "o", {title: "E-paper display settings"}]
+  # - ["epd.busy_gpio", "i", 4, {title: "Busy Pin"}]
+  # - ["epd.rst_gpio", "i", 16, {title: "Reset Pin"}]
+  # - ["epd.dc_gpio", "i", 17, {title: "Data/Command Pin"}]
+  # - ["epd.cs_gpio", "i", 5, {title: "CS Pin"}]
   - ["spi.enable", true]
 
 libs:
+  - origin: https://github.com/chrismilleruk/mos-lib-epd2in9b
   - origin: https://github.com/mongoose-os-libs/ca-bundle
   - origin: https://github.com/mongoose-os-libs/rpc-service-config
   - origin: https://github.com/mongoose-os-libs/rpc-service-fs
