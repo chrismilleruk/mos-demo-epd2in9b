@@ -53,4 +53,5 @@ https://www.waveshare.com/wiki/2.9inch_e-Paper_Module_(B)
   - [x] Call entry point from main.cpp.
   - [x] Move hardcoded configuration to mos_config
   - [x] Set "spi.enable"=true
-  - [ ] Deal with watchdog timer.
+  - [x] Deal with watchdog timer.
+- [x] Convert to library
